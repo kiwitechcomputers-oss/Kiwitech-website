@@ -80,7 +80,7 @@ export default function ContactPage() {
             {/* Form */}
             <ScrollReveal delay={120}>
               <div className="contact-form-card">
-                <h3 className="heading-h3">Send Us an Enquiry</h3>
+                <h3 className="heading-h3">Send an Enquiry</h3>
                 <ContactForm />
               </div>
             </ScrollReveal>

@@ -909,6 +909,30 @@ main {
 .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--teal); box-shadow: 0 0 0 4px rgba(14,165,165,0.18); }
 .form-textarea { resize: vertical; min-height: 130px; }
 
+/* ── WhatsApp Enquiry Widget ────────────────── */
+.wa-enquiry { display: flex; flex-direction: column; gap: 1.25rem; }
+.wa-enquiry-header { display: flex; align-items: flex-start; gap: 1rem; }
+.wa-icon {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: #25D366; color: white;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+}
+.wa-enquiry-title { font-weight: 700; font-size: 1rem; color: var(--navy-900); margin-bottom: 0.25rem; }
+.wa-enquiry-sub { font-size: var(--body-sm); color: var(--charcoal-400); line-height: 1.5; }
+.wa-textarea { min-height: 140px; font-size: 0.9375rem; }
+.wa-send-btn {
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  color: white !important;
+  display: flex; align-items: center; justify-content: center; gap: 0.625rem;
+  font-size: 1.0625rem; font-weight: 700;
+  box-shadow: 0 6px 20px rgba(37,211,102,0.35);
+  transition: all var(--duration-base) var(--ease);
+}
+.wa-send-btn:hover { background: #1ebe5d !important; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,211,102,0.45); }
+.wa-enquiry-note { font-size: var(--body-xs); color: var(--charcoal-400); text-align: center; line-height: 1.5; }
+
 /* ── WhatsApp FAB ───────────────────────────── */
 .whatsapp-fab { position: fixed; bottom: 2.25rem; right: 2rem; z-index: 999; width: 62px; height: 62px; border-radius: 50%; background: #25D366; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 28px rgba(37,211,102,0.5); transition: transform var(--duration-base) var(--ease); }
 .whatsapp-fab:hover { transform: scale(1.12) translateY(-3px); }

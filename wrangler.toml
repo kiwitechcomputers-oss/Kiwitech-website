@@ -1,0 +1,7 @@
+# Cloudflare Pages / Workers deployment config
+name = "kiwi-tech-computers"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = ".open-next/assets"

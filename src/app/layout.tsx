@@ -4,7 +4,6 @@ import '@/styles/globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFAB from '@/components/layout/WhatsAppFAB'
-import MobileBar from '@/components/layout/MobileBar'
 import QuoteModal from '@/components/layout/QuoteModal'
 import { BUSINESS } from '@/lib/constants'
 
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
     template: `%s | ${BUSINESS.name}`,
   },
   description:
-    'Kiwi Tech Computers — Hyderabad\'s trusted IT partner for laptop/desktop sales & repair, CCTV installation, printer service, and corporate AMC. 5.0★ rated, 129+ Google reviews. Medipally, Hyderabad.',
+    'Kiwi Tech Computers — Hyderabad\'s trusted IT partner for laptop/desktop sales & repair, CCTV installation, printer service, and corporate AMC. 5.0★ rated Google Reviews. Medipally, Hyderabad.',
   keywords: [
     'computer repair Hyderabad',
     'laptop repair Medipally',
@@ -45,13 +44,13 @@ export const metadata: Metadata = {
     siteName: BUSINESS.name,
     title: `${BUSINESS.name} — IT Sales, Repair & Corporate Solutions in Hyderabad`,
     description:
-      'Trusted IT sales, repair, CCTV, and AMC solutions in Medipally, Hyderabad. 5.0★ / 129 Google reviews.',
+      'Trusted IT sales, repair, CCTV, and AMC solutions in Medipally, Hyderabad. 5.0★ Google Reviews.',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: BUSINESS.name }],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${BUSINESS.name} — Hyderabad IT Partner`,
-    description: 'IT sales, repair, CCTV & AMC. 5.0★, 129+ reviews. Medipally, Hyderabad.',
+    description: 'IT sales, repair, CCTV & AMC. 5.0★ Google Reviews. Medipally, Hyderabad.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -143,7 +142,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <WhatsAppFAB />
-        <MobileBar />
         <QuoteModal />
       </body>
     </html>

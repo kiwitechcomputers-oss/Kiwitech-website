@@ -53,7 +53,7 @@ export default function Hero() {
                 </div>
               </div>
               <div style={{ fontSize: 'var(--body-sm)', color: 'rgba(255,255,255,0.8)' }}>
-                <strong style={{ color: 'var(--white)', display: 'block', fontSize: '1rem' }}>129+ Verified Reviews</strong>
+                <strong style={{ color: 'var(--white)', display: 'block', fontSize: '1rem' }}>5.0★ Google Reviews</strong>
                 Trusted IT partner on Google Maps
               </div>
             </div>

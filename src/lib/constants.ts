@@ -354,8 +354,8 @@ export const WHY_CHOOSE_US = [
   },
   {
     icon: 'users',
-    title: 'Trusted by 129+ Customers',
-    description: 'Proud to maintain a 5.0★ rating with over 129 Google reviews. Your satisfaction is our priority.',
+    title: '5.0★ Google Reviews',
+    description: 'Proud to maintain a top-rated 5.0★ Google Reviews rating. Your satisfaction is our priority.',
   },
 ]
 

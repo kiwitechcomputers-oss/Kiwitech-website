@@ -55,14 +55,13 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Nav */}
-            <div className="navbar-nav" role="list">
+            <div className="navbar-nav">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    role="listitem"
                     className={`nav-link${isActive ? ' active' : ''}`}
                     aria-current={isActive ? 'page' : undefined}
                   >

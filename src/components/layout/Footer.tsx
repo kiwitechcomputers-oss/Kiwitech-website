@@ -19,8 +19,8 @@ export default function Footer() {
               </div>
             </Link>
             <p>
-              Hyderabad&apos;s trusted IT partner for laptop & desktop sales, repair, CCTV installation,
-              printer service, and corporate AMC — since 2015.
+              Hyderabad&apos;s trusted IT partner for laptop &amp; desktop sales, repair, CCTV installation,
+              printer service, and corporate AMC.
             </p>
             <div className="social-links" style={{ marginTop: '1.25rem' }}>
               <a
@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="footer-col">
-            <h4>Services</h4>
+            <h3 className="footer-heading">Services</h3>
             <ul>
               <li><Link href="/sales">Sales</Link></li>
               <li><Link href="/services">Repair Services</Link></li>
@@ -67,7 +67,7 @@ export default function Footer() {
 
           {/* Company */}
           <div className="footer-col">
-            <h4>Company</h4>
+            <h3 className="footer-heading">Company</h3>
             <ul>
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/about#reviews">Reviews</Link></li>
@@ -83,7 +83,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="footer-col">
-            <h4>Contact Us</h4>
+            <h3 className="footer-heading">Contact Us</h3>
             <div className="footer-contact-item">
               <MapPin size={15} aria-hidden="true" />
               <span>{BUSINESS.address.full}</span>
@@ -105,8 +105,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>
-            © {currentYear} {BUSINESS.name}. All rights reserved. |{' '}
-            <a href={`mailto:${BUSINESS.email}`}>kiwitechnologies47@gmail.com</a>
+            © {currentYear} {BUSINESS.name}. All rights reserved.
           </p>
           <p>
             Designed &amp; developed by{' '}

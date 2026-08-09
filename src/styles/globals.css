@@ -3,8 +3,6 @@
    kiwitechnologies.in
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
-
 /* ── Design Tokens ─────────────────────────── */
 :root {
   /* Colors */
@@ -46,7 +44,7 @@
   --radius-full: 9999px;
 
   /* Typography Scale */
-  --font: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font: var(--font-jakarta), var(--font-inter), 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
   --h1: clamp(2.5rem, 5.5vw, 4.25rem);
   --h2: clamp(2rem, 4vw, 3.25rem);
   --h3: clamp(1.35rem, 2.5vw, 2rem);
@@ -287,8 +285,13 @@ main {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: #087575;
   margin-bottom: 1rem;
+}
+.section--dark .heading-eyebrow,
+.section--navy-alt .heading-eyebrow,
+.page-hero .heading-eyebrow {
+  color: var(--teal);
 }
 .heading-eyebrow::before {
   content: '';
@@ -1060,7 +1063,7 @@ main {
   gap: 0.25rem;
   font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--teal);
+  color: #087575;
   margin-top: auto;
 }
 .category-card:hover { background: var(--navy); border-color: var(--navy); transform: translateY(-6px); box-shadow: var(--shadow-lg); }

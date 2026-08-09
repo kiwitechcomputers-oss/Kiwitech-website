@@ -11,11 +11,11 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand */}
           <div className="footer-brand">
-            <Link href="/" className="navbar-logo" aria-label="Kiwi Tech Computers">
+            <Link href="/" className="navbar-logo" aria-label="Kiwi Technologies">
               <div className="navbar-logo-mark">K</div>
               <div className="navbar-logo-text">
-                <div className="navbar-logo-name">Kiwi Tech</div>
-                <div className="navbar-logo-sub">Computers</div>
+                <div className="navbar-logo-name">Kiwi</div>
+                <div className="navbar-logo-sub">Technologies</div>
               </div>
             </Link>
             <p>

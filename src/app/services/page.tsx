@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Professional computer repair & maintenance services in Medipally, Hyderabad. Laptop screen replacement, motherboard repair, CCTV installation, printer service & accessories support.',
   alternates: { canonical: `${BUSINESS.domain}/services` },
   openGraph: {
-    title: 'Repair & Service | Kiwi Tech Computers Hyderabad',
+    title: 'Repair & Service | Kiwi Technologies Hyderabad',
     description: 'Fast diagnosis, genuine spare parts, certified technicians, doorstep service available.',
   },
 }

@@ -7,7 +7,7 @@ import { BUSINESS } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'About Us — 3+ Years of Trusted IT Services in Hyderabad',
   description:
-    'Learn about Kiwi Tech Computers — Medipally Hyderabad’s premier IT sales, service & AMC provider. 5.0★ Google rating with 120+ reviews.',
+    'Learn about Kiwi Technologies — Medipally Hyderabad’s premier IT sales, service & AMC provider. 5.0★ Google rating with 120+ reviews.',
   alternates: { canonical: `${BUSINESS.domain}/about` },
 }
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
                   From Local Repair Shop to Trusted Corporate Partner
                 </h2>
                 <p style={{ color: 'var(--charcoal-500)', lineHeight: 1.8, marginBottom: '1rem' }}>
-                  Kiwi Tech Computers was founded with a single mission: to provide honest, quick, and highly skilled computer repair and IT services to residents and businesses in Medipally, Hyderabad.
+                  Kiwi Technologies was founded with a single mission: to provide honest, quick, and highly skilled computer repair and IT services to residents and businesses in Medipally, Hyderabad.
                 </p>
                 <p style={{ color: 'var(--charcoal-500)', lineHeight: 1.8 }}>
                   Over the past 3+ years, we have expanded from computer repairs into comprehensive sales, CCTV surveillance installations, printer servicing, and enterprise Annual Maintenance Contracts (AMC).

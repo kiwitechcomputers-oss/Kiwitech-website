@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Buy brand-new and certified refurbished laptops, desktops, monitors, printers, CCTV systems, and computer accessories in Medipally, Hyderabad. HP, Dell, Lenovo, Canon, CP Plus & more.',
   alternates: { canonical: `${BUSINESS.domain}/sales` },
   openGraph: {
-    title: 'Sales | Kiwi Tech Computers Hyderabad',
+    title: 'Sales | Kiwi Technologies Hyderabad',
     description: 'Laptops, desktops, printers, CCTV & accessories — all major brands at competitive prices.',
   },
 }

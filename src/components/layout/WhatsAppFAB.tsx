@@ -7,7 +7,7 @@ export default function WhatsAppFAB() {
       className="whatsapp-fab"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with Kiwi Tech Computers on WhatsApp"
+      aria-label="Chat with Kiwi Technologies on WhatsApp"
       id="whatsapp-fab-btn"
       title="Chat on WhatsApp"
     >

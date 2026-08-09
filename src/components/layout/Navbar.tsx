@@ -46,11 +46,11 @@ export default function Navbar() {
         <div className="container">
           <nav className="navbar-inner" aria-label="Main navigation">
             {/* Logo */}
-            <Link href="/" className="navbar-logo" aria-label="Kiwi Tech Computers — Home">
+            <Link href="/" className="navbar-logo" aria-label="Kiwi Technologies — Home">
               <div className="navbar-logo-mark" aria-hidden="true">K</div>
               <div className="navbar-logo-text">
-                <div className="navbar-logo-name">Kiwi Tech</div>
-                <div className="navbar-logo-sub">Computers</div>
+                <div className="navbar-logo-name">Kiwi</div>
+                <div className="navbar-logo-sub">Technologies</div>
               </div>
             </Link>
 

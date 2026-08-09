@@ -15,8 +15,8 @@ export default function MapStrip() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Kiwi Tech Computers location on Google Maps"
-          aria-label="Google Maps showing Kiwi Tech Computers store location in Medipally, Hyderabad"
+          title="Kiwi Technologies location on Google Maps"
+          aria-label="Google Maps showing Kiwi Technologies store location in Medipally, Hyderabad"
         />
       </div>
 

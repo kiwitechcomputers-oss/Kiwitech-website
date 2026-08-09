@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Tailored Annual Maintenance Contracts (AMC), bulk procurement, and IT support plans for companies, offices, schools, and institutions across Hyderabad.',
   alternates: { canonical: `${BUSINESS.domain}/corporate` },
   openGraph: {
-    title: 'Corporate Solutions | Kiwi Tech Computers Hyderabad',
+    title: 'Corporate Solutions | Kiwi Technologies Hyderabad',
     description: 'Enterprise IT AMC, bulk hardware procurement, and SLA-backed maintenance plans.',
   },
 }

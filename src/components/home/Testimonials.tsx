@@ -39,7 +39,7 @@ export default function Testimonials() {
               <span className="badge badge-gold">Verified Google Reviews</span>
             </div>
             <div className="testimonials-subtext">
-              Real reviews from Kiwi Tech Computers customers on Google Maps
+              Real reviews from Kiwi Technologies customers on Google Maps
             </div>
           </div>
         </div>

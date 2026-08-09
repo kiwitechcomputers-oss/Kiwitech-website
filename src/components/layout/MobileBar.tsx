@@ -9,7 +9,7 @@ export default function MobileBar() {
         <a
           href={`tel:${BUSINESS.phone}`}
           className="mobile-bar-btn"
-          aria-label={`Call Kiwi Tech Computers: ${BUSINESS.phoneDisplay}`}
+          aria-label={`Call Kiwi Technologies: ${BUSINESS.phoneDisplay}`}
           id="mobile-bar-call"
         >
           <Phone size={20} aria-hidden="true" />
@@ -35,7 +35,7 @@ export default function MobileBar() {
           className="mobile-bar-btn"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Get directions to Kiwi Tech Computers"
+          aria-label="Get directions to Kiwi Technologies"
           id="mobile-bar-directions"
         >
           <MapPin size={20} aria-hidden="true" />

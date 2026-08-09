@@ -8,41 +8,13 @@ const row2 = TESTIMONIALS.slice(6, 12)
 
 export default function Testimonials() {
   return (
-    <div>
+    <div className="testimonials-section-wrap">
       {/* Top Banner with Google Places Direct Rating */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          background: 'var(--white)',
-          border: '1.5px solid var(--border)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '1.5rem 2.25rem',
-          marginBottom: '2.5rem',
-          gap: '1.5rem',
-          flexWrap: 'wrap',
-          boxShadow: 'var(--shadow-sm)',
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+      <div className="testimonials-header-card">
+        <div className="testimonials-header-left">
           {/* Official Google G Logo */}
-          <div
-            style={{
-              width: 52,
-              height: 52,
-              borderRadius: '50%',
-              background: '#FFFFFF',
-              border: '1px solid var(--border)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexShrink: 0,
-              boxShadow: 'var(--shadow-sm)',
-            }}
-            aria-hidden="true"
-          >
-            <svg width="28" height="28" viewBox="0 0 24 24">
+          <div className="testimonials-g-logo" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24">
               <path
                 fill="#4285F4"
                 d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -62,11 +34,11 @@ export default function Testimonials() {
             </svg>
           </div>
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem' }}>
-              <span style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--navy)' }}>5.0★ Rating</span>
+            <div className="testimonials-rating-row">
+              <span className="testimonials-score">5.0★ Rating</span>
               <span className="badge badge-gold">Verified Google Reviews</span>
             </div>
-            <div style={{ fontSize: 'var(--body-sm)', color: 'var(--charcoal-500)', marginTop: 2 }}>
+            <div className="testimonials-subtext">
               Real reviews from Kiwi Tech Computers customers on Google Maps
             </div>
           </div>
@@ -76,7 +48,7 @@ export default function Testimonials() {
           href={BUSINESS.googleReviewLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-teal"
+          className="btn btn-teal testimonials-write-btn"
           id="google-review-direct-btn"
         >
           <span>Write a Review on Google</span>
@@ -94,8 +66,8 @@ export default function Testimonials() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', marginBottom: '1rem' }}>
                   <div
                     style={{
-                      width: 44,
-                      height: 44,
+                      width: 42,
+                      height: 42,
                       borderRadius: '50%',
                       background: `linear-gradient(135deg, ${
                         idx % 3 === 0 ? '#0B1F3A, #0EA5A5' :
@@ -107,7 +79,7 @@ export default function Testimonials() {
                       alignItems: 'center',
                       justifyContent: 'center',
                       fontWeight: 800,
-                      fontSize: '1rem',
+                      fontSize: '0.95rem',
                       flexShrink: 0,
                     }}
                     aria-hidden="true"
@@ -141,7 +113,7 @@ export default function Testimonials() {
                   </svg>
                 </div>
 
-                <p style={{ fontSize: '0.9rem', color: 'var(--charcoal-500)', lineHeight: 1.6 }}>
+                <p style={{ fontSize: '0.875rem', color: 'var(--charcoal-500)', lineHeight: 1.6 }}>
                   &ldquo;{t.text}&rdquo;
                 </p>
               </div>
@@ -162,8 +134,8 @@ export default function Testimonials() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', marginBottom: '1rem' }}>
                   <div
                     style={{
-                      width: 44,
-                      height: 44,
+                      width: 42,
+                      height: 42,
                       borderRadius: '50%',
                       background: `linear-gradient(135deg, ${
                         idx % 3 === 0 ? '#0EA5A5, #7BC142' :
@@ -175,7 +147,7 @@ export default function Testimonials() {
                       alignItems: 'center',
                       justifyContent: 'center',
                       fontWeight: 800,
-                      fontSize: '1rem',
+                      fontSize: '0.95rem',
                       flexShrink: 0,
                     }}
                     aria-hidden="true"
@@ -209,7 +181,7 @@ export default function Testimonials() {
                   </svg>
                 </div>
 
-                <p style={{ fontSize: '0.9rem', color: 'var(--charcoal-500)', lineHeight: 1.6 }}>
+                <p style={{ fontSize: '0.875rem', color: 'var(--charcoal-500)', lineHeight: 1.6 }}>
                   &ldquo;{t.text}&rdquo;
                 </p>
               </div>
@@ -224,12 +196,12 @@ export default function Testimonials() {
       </div>
 
       {/* Footer Link */}
-      <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
         <a
           href={BUSINESS.googleReviewLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-secondary"
+          className="btn btn-secondary testimonials-footer-btn"
         >
           View All Google Reviews on Maps
           <ExternalLink size={16} aria-hidden="true" />

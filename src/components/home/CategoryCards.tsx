@@ -16,7 +16,7 @@ export default function CategoryCards() {
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollRef.current) return
-    const scrollAmount = scrollRef.current.clientWidth * 0.7
+    const scrollAmount = scrollRef.current.clientWidth * 0.6
     scrollRef.current.scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth',
@@ -24,31 +24,26 @@ export default function CategoryCards() {
   }
 
   return (
-    <div className="carousel-wrapper">
-      {/* Navigation Controls */}
-      <div className="carousel-nav-header">
-        <span className="carousel-nav-hint">Swipe or tap arrows to view categories</span>
-        <div className="carousel-arrows">
-          <button
-            onClick={() => scroll('left')}
-            className="carousel-arrow-btn"
-            aria-label="Scroll left"
-            type="button"
-          >
-            <ChevronLeft size={20} />
-          </button>
-          <button
-            onClick={() => scroll('right')}
-            className="carousel-arrow-btn"
-            aria-label="Scroll right"
-            type="button"
-          >
-            <ChevronRight size={20} />
-          </button>
-        </div>
-      </div>
+    <div className="carousel-rel-container">
+      {/* Side Glowing Navigation Arrow Buttons */}
+      <button
+        onClick={() => scroll('left')}
+        className="side-glowing-arrow left light-theme"
+        aria-label="Scroll left"
+        type="button"
+      >
+        <ChevronLeft size={22} />
+      </button>
+      <button
+        onClick={() => scroll('right')}
+        className="side-glowing-arrow right light-theme"
+        aria-label="Scroll right"
+        type="button"
+      >
+        <ChevronRight size={22} />
+      </button>
 
-      {/* Category Carousel Container */}
+      {/* Category Carousel Track */}
       <div className="category-carousel" ref={scrollRef}>
         {categories.map((cat) => {
           const Icon = cat.icon
@@ -65,7 +60,7 @@ export default function CategoryCards() {
               <div className="category-name">{cat.name}</div>
               <div className="category-sub">{cat.sub}</div>
               <div className="category-arrow-badge">
-                <span>View</span>
+                <span>View Catalog</span>
                 <ChevronRight size={14} />
               </div>
             </Link>

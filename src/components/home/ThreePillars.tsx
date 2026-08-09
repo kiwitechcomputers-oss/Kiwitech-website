@@ -59,7 +59,7 @@ export default function ThreePillars() {
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollRef.current) return
-    const scrollAmount = scrollRef.current.clientWidth * 0.75
+    const scrollAmount = scrollRef.current.clientWidth * 0.65
     scrollRef.current.scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth',
@@ -67,31 +67,26 @@ export default function ThreePillars() {
   }
 
   return (
-    <div className="carousel-wrapper">
-      {/* Navigation Controls */}
-      <div className="carousel-nav-header">
-        <span className="carousel-nav-hint">Swipe or use arrows to view services</span>
-        <div className="carousel-arrows">
-          <button
-            onClick={() => scroll('left')}
-            className="carousel-arrow-btn"
-            aria-label="Scroll left"
-            type="button"
-          >
-            <ChevronLeft size={20} />
-          </button>
-          <button
-            onClick={() => scroll('right')}
-            className="carousel-arrow-btn"
-            aria-label="Scroll right"
-            type="button"
-          >
-            <ChevronRight size={20} />
-          </button>
-        </div>
-      </div>
+    <div className="carousel-rel-container">
+      {/* Side Glowing Navigation Arrow Buttons */}
+      <button
+        onClick={() => scroll('left')}
+        className="side-glowing-arrow left"
+        aria-label="Scroll left"
+        type="button"
+      >
+        <ChevronLeft size={22} />
+      </button>
+      <button
+        onClick={() => scroll('right')}
+        className="side-glowing-arrow right"
+        aria-label="Scroll right"
+        type="button"
+      >
+        <ChevronRight size={22} />
+      </button>
 
-      {/* Pillars Carousel Container */}
+      {/* Pillars Carousel Track */}
       <div className="pillars-carousel" ref={scrollRef}>
         {pillars.map((p) => {
           const Icon = p.icon
@@ -177,7 +172,7 @@ export default function ThreePillars() {
                 </div>
               </div>
 
-              {/* Action Button with clean padding */}
+              {/* Action Button */}
               <Link
                 href={p.link}
                 className="pillar-action-btn"

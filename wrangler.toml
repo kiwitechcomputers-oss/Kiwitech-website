@@ -1,7 +1,7 @@
-# Cloudflare Pages / Workers deployment config
+# Cloudflare Pages deployment config — uses OpenNext adapter
 name = "kiwi-tech-computers"
-compatibility_date = "2025-01-01"
+compatibility_date = "2026-08-09"
 compatibility_flags = ["nodejs_compat"]
 
-[site]
-bucket = ".open-next/assets"
+# Output directory produced by @opennextjs/cloudflare
+pages_build_output_dir = ".open-next/assets"

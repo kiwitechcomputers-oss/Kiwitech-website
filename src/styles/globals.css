@@ -259,7 +259,7 @@ main {
 
 @media (max-width: 900px) {
   .navbar-inner { grid-template-columns: auto auto; justify-content: space-between; }
-  .navbar-nav, .navbar-cta { display: none; }
+  .navbar-nav, .navbar-cta { display: none !important; }
   .hamburger { display: flex; }
 }
 
@@ -699,6 +699,13 @@ main {
 @media (max-width: 900px) {
   .contact-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
+  .contact-info-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius-lg);
+  }
+  .contact-form-card {
+    padding: 1.5rem 1.25rem;
+  }
 }
 
 /* ── Footer ─────────────────────────────────── */

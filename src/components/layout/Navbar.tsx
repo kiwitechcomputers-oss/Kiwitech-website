@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ChevronRight, Menu, X } from 'lucide-react'
+import { WHATSAPP_URL } from '@/lib/constants'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -29,7 +30,7 @@ export default function Navbar() {
   useEffect(() => { setMenuOpen(false) }, [pathname])
 
   const openQuote = () => {
-    document.dispatchEvent(new CustomEvent('open-quote-modal'))
+    window.open(WHATSAPP_URL("Hi Kiwi Tech! I'd like to get a free quote for your products/services."), '_blank')
     setMenuOpen(false)
   }
 

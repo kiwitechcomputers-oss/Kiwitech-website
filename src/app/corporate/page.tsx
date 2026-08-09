@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import CorporateTabs from '@/components/corporate/CorporateTabs'
+import CorporateSections from '@/components/corporate/CorporateSections'
 import ScrollReveal from '@/components/shared/ScrollReveal'
 import { BUSINESS } from '@/lib/constants'
 
@@ -35,15 +35,8 @@ export default function CorporatePage() {
       <section className="section section--white" id="corporate-plans">
         <div className="container">
           <ScrollReveal>
-            <div className="section-header">
-              <span className="heading-eyebrow">Tailored Plans</span>
-              <h2 className="heading-h2">Corporate IT Offerings</h2>
-              <p className="text-lead mt-md">
-                Explore our standard AMC tiers, bulk procurement models, or request a custom proposal.
-              </p>
-            </div>
+            <CorporateSections />
           </ScrollReveal>
-          <CorporateTabs />
         </div>
       </section>
     </>

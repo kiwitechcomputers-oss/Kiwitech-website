@@ -438,9 +438,15 @@ main {
 /* ── Page Hero (Inner Pages Fix) ────────────── */
 .page-hero {
   background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
-  padding-top: clamp(3rem, 6vw, 5rem);
-  padding-bottom: clamp(3rem, 6vw, 5rem);
+  padding-top: calc(var(--nav-h) + 2.5rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+@media (max-width: 768px) {
+  .page-hero {
+    padding-top: calc(var(--nav-h) + 1.5rem) !important;
+    padding-bottom: 2.25rem !important;
+  }
 }
 .page-hero h1 {
   font-size: var(--h1);
@@ -450,9 +456,10 @@ main {
   margin-bottom: 1.25rem;
 }
 .page-hero p {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.85);
   max-width: 640px;
+  line-height: 1.6;
 }
 
 /* ── Dual Direction Infinite Marquee ───────── */
@@ -1399,6 +1406,131 @@ main {
   }
 }
 
+/* ── Corporate Sections & Carousels ──────────── */
+.corporate-sections-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.corp-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.corp-carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.corp-carousel-track::-webkit-scrollbar { display: none; }
+
+.corp-plan-card, .corp-service-card, .corp-why-card {
+  flex: 0 0 calc(33.333% - 1rem);
+  min-width: 280px;
+  scroll-snap-align: start;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.corp-plan-card.featured {
+  border-color: var(--teal);
+  box-shadow: var(--shadow-md);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+}
+.plan-tier-badge {
+  font-size: var(--body-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+}
+.corp-card-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin-bottom: 0.5rem;
+}
+.corp-card-desc {
+  font-size: 0.9rem;
+  color: var(--charcoal-500);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+.corp-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.corp-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--charcoal-600);
+}
+.corp-check-icon {
+  color: var(--teal);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.corp-card-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+.corp-card-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--teal-100);
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+.corp-card-icon-box.gold {
+  background: var(--gold-100);
+  color: var(--gold);
+}
+.corp-card-sub {
+  font-size: var(--body-xs);
+  font-weight: 700;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.inline-arrow {
+  position: static !important;
+  transform: none !important;
+}
+.hide-desktop { display: none; }
+
+@media (max-width: 900px) {
+  .inline-arrow { display: none !important; }
+  .hide-desktop { display: flex !important; }
+  .corp-plan-card, .corp-service-card, .corp-why-card {
+    flex: 0 0 62%; /* 60% active card + 40% peek */
+    min-width: 250px;
+    padding: 1.5rem 1.25rem;
+  }
+}
+
 /* ── Mobile Utilities & Cleanups ─────────────── */
 @media (max-width: 768px) {
   .mobile-bar { display: none !important; }
@@ -1421,6 +1553,7 @@ main {
     padding-block: clamp(2.5rem, 6vw, 4rem) !important;
   }
 }
+
 
 
 

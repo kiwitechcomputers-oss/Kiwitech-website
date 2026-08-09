@@ -67,8 +67,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   verification: {
-    // Add your Google Search Console verification token here
-    // google: 'YOUR_VERIFICATION_TOKEN',
+    google: 'NJQO2oFEyrRyJs17QUlNgDNxd_tJPVoXzxJsP4EBKSw',
   },
 }
 
@@ -76,6 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-IN" className={`${jakarta.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="NJQO2oFEyrRyJs17QUlNgDNxd_tJPVoXzxJsP4EBKSw" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

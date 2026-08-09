@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: `%s | ${BUSINESS.name}`,
   },
   description:
-    'Kiwi Tech Computers — Hyderabad\'s trusted IT partner for laptop/desktop sales & repair, CCTV installation, printer service, and corporate AMC. 5.0★ rated Google Reviews. Medipally, Hyderabad.',
+    'Kiwi Technologies — Hyderabad\'s trusted IT partner for laptop/desktop sales & repair, CCTV installation, printer service, and corporate AMC. 5.0★ rated Google Reviews. Medipally, Hyderabad.',
   keywords: [
     'computer repair Hyderabad',
     'laptop repair Medipally',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     'printer repair Medipally',
     'IT support Hyderabad',
     'desktop repair Hyderabad',
-    'Kiwi Tech Computers',
+    'Kiwi Technologies',
   ],
   authors: [{ name: BUSINESS.name, url: BUSINESS.domain }],
   creator: BUSINESS.name,

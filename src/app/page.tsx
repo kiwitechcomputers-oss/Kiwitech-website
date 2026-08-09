@@ -9,7 +9,7 @@ import FAQ from '@/components/home/FAQ'
 import ScrollReveal from '@/components/shared/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Kiwi Tech Computers — IT Sales, Repair & Corporate Solutions in Hyderabad',
+  title: 'Kiwi Technologies — IT Sales, Repair & Corporate Solutions in Hyderabad',
   description:
     "Hyderabad's trusted IT partner for laptop & desktop sales, repair, CCTV installation, printer service, and corporate AMC. 5.0★ rated Google Reviews. Medipally, Hyderabad.",
   alternates: { canonical: 'https://kiwitechnologies.in' },

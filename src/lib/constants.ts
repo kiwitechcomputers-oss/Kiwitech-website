@@ -1,6 +1,6 @@
 // Business constants — single source of truth for all pages
 export const BUSINESS = {
-  name: 'Kiwi Tech Computers',
+  name: 'Kiwi Technologies',
   tagline: "Hyderabad's Trusted IT Sales, Service & Corporate Solutions Partner",
   shortTagline: 'IT Sales, Service & Corporate Solutions',
   phone: '06303547474',

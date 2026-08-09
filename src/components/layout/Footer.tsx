@@ -85,8 +85,20 @@ export default function Footer() {
           <div className="footer-col">
             <h3 className="footer-heading">Contact Us</h3>
             <div className="footer-contact-item">
-              <MapPin size={15} aria-hidden="true" />
-              <span>{BUSINESS.address.full}</span>
+              <MapPin size={15} aria-hidden="true" style={{ flexShrink: 0, marginTop: '3px' }} />
+              <div>
+                <span>{BUSINESS.address.full}</span>
+                <br />
+                <a
+                  href={BUSINESS.googleMapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'var(--teal)', fontWeight: 600, fontSize: '0.85rem', marginTop: '4px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                  id="footer-location-map-link"
+                >
+                  View Store Location on Google Maps 📍
+                </a>
+              </div>
             </div>
             <div className="footer-contact-item">
               <Phone size={15} aria-hidden="true" />

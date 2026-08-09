@@ -71,16 +71,18 @@ export default function Navbar() {
               })}
             </div>
 
-            {/* CTA */}
-            <button
-              className="btn btn-primary navbar-cta"
-              onClick={openQuote}
-              id="nav-get-quote-btn"
-              aria-label="Get a free quote"
-            >
-              Get a Quote
-              <ChevronRight size={16} aria-hidden="true" />
-            </button>
+            {/* CTA — desktop only */}
+            <div className="navbar-cta-desktop">
+              <button
+                className="btn btn-primary navbar-cta"
+                onClick={openQuote}
+                id="nav-get-quote-btn"
+                aria-label="Get a free quote"
+              >
+                Get a Quote
+                <ChevronRight size={16} aria-hidden="true" />
+              </button>
+            </div>
 
             {/* Hamburger */}
             <button

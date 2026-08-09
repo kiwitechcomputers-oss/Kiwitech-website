@@ -22,7 +22,7 @@ export default function ContactForm() {
           </svg>
         </div>
         <div>
-          <h4 className="wa-title">Send us a WhatsApp Message</h4>
+          <h3 className="wa-title">Send an Enquiry via WhatsApp</h3>
           <p className="wa-sub">Describe your issue or requirement — our team replies within minutes.</p>
         </div>
       </div>

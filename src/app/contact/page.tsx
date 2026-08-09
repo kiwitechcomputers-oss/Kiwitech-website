@@ -91,9 +91,6 @@ export default function ContactPage() {
             {/* Form */}
             <ScrollReveal delay={120}>
               <div className="contact-form-card">
-                <h3 className="heading-h3" style={{ marginBottom: '1rem', color: 'var(--navy)' }}>
-                  Send an Enquiry via WhatsApp
-                </h3>
                 <ContactForm />
               </div>
             </ScrollReveal>
